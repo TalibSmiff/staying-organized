@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
     <header>
@@ -14,7 +14,32 @@
       </nav>
     </header>
     <main>
+      <h1>TODO's</h1>
       <a href="new_todo.html">Add TODO</a>
+
+      <label for="user_select">User</label>
+      <select name="user_select" id="user_select">
+        <option value="">select user...</option>
+      </select>
+      <br />
+      <br />
+      <table>
+        <thead>
+          <tr>
+            Priority
+          </tr>
+          <tr>
+            Category
+          </tr>
+          <tr>
+            Description
+          </tr>
+          <tr>
+            Deadline
+          </tr>
+        </thead>
+        <tbody id="todo_body"></tbody>
+      </table>
     </main>
     <footer></footer>
     <script src="scripts/todos.js"></script>
